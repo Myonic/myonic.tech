@@ -5,3 +5,4 @@
 - Use hamburger menu for mobile (https://codepen.io/erikterwan/pen/EVzeRP)
 - Add forestry functionality (https://forestry.io/)
 - Add RSS feed link to footer
+- Myonic Move about page

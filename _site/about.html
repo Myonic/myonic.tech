@@ -1,5 +1,5 @@
 <!--© Copyright Myonic Technologies 2018. All Rights Reserved.-->
-<!--Site generated on Tue, 14 Aug 2018 23:32:11 -0600-->
+<!--Site generated on Wed, 15 Aug 2018 17:11:29 -0600-->
 
 <!DOCTYPE html>
 <html lang='en'>
@@ -45,8 +45,8 @@
   '@type': 'NewsArticle',
   'mainEntityOfPage': 'http://localhost:4000/about.html',
   'headline': 'Myonic Technologies',
-  'datePublished': '2018-08-14T23:32:11-06:00',
-  'dateModified': '2018-08-14T23:32:11-06:00',
+  'datePublished': '2018-08-15T17:11:29-06:00',
+  'dateModified': '2018-08-15T17:11:29-06:00',
   'description': 'Creating enabling technology for users with paralysis. We give users back the ability to control their own muscles with our wearable device.',
   'author': {
     '@type': 'Person',
@@ -114,7 +114,7 @@ html {
     top: 0;
     left: 0;
     right: 0;
-    z-index: 100;
+    z-index: 10;
     transition: background 1s; }
     .wrapper .navbar .nav {
       height: 96px;
@@ -133,7 +133,8 @@ html {
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
         transition: background 1s, clip-path 1s, -webkit-clip-path 1s, width 1s;
         display: inline-block;
-        width: 320px; }
+        width: 320px;
+        z-index: 30; }
         @media only screen and (max-width: 900px) {
           .wrapper .navbar .nav .logo-cont {
             width: 168px; } }
@@ -148,10 +149,30 @@ html {
           .wrapper .navbar .nav .logo-cont .logo .logo-text {
             fill: #393D51;
             transition: fill 1s; }
-      .wrapper .navbar .nav .items {
+      .wrapper .navbar .nav nav .items {
         float: right;
-        display: inline-block; }
-        .wrapper .navbar .nav .items .item {
+        display: inline-block;
+        list-style-type: none;
+        margin: 0;
+        z-index: 20; }
+        @media only screen and (max-width: 900px) {
+          .wrapper .navbar .nav nav .items {
+            box-sizing: border-box;
+            position: absolute;
+            right: 0;
+            width: 100%;
+            margin: -100px 0 0 0;
+            padding: 181px 50px 50px;
+            font-size: 1.2em;
+            background: #03ABFB;
+            list-style-type: none;
+            -webkit-font-smoothing: antialiased;
+            transform-origin: 0% 0%;
+            transform: translate(0, -100%);
+            transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+            -webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%); } }
+        .wrapper .navbar .nav nav .items .item {
           position: relative;
           padding: 0 16px;
           font-size: 1em;
@@ -160,15 +181,16 @@ html {
           line-height: 96px;
           display: inline-block; }
           @media only screen and (max-width: 900px) {
-            .wrapper .navbar .nav .items .item {
+            .wrapper .navbar .nav nav .items .item {
+              display: block;
               line-height: 64px; } }
-          .wrapper .navbar .nav .items .item a {
+          .wrapper .navbar .nav nav .items .item a {
             text-decoration: none;
             transition: opacity 0.5s, color 0.5s;
             color: #393D51; }
-            .wrapper .navbar .nav .items .item a:hover {
+            .wrapper .navbar .nav nav .items .item a:hover {
               opacity: 0.8; }
-            .wrapper .navbar .nav .items .item a:before {
+            .wrapper .navbar .nav nav .items .item a:before {
               content: "";
               position: absolute;
               width: 100%;
@@ -180,32 +202,90 @@ html {
               -webkit-transform: scaleX(0);
               transform: scaleX(0);
               transition: all 0.3s ease-in-out 0s; }
-            .wrapper .navbar .nav .items .item a:hover:before {
+              @media only screen and (max-width: 900px) {
+                .wrapper .navbar .nav nav .items .item a:before {
+                  display: none; } }
+            .wrapper .navbar .nav nav .items .item a:hover:before {
               visibility: visible;
               -webkit-transform: scaleX(1);
               transform: scaleX(1); }
-          .wrapper .navbar .nav .items .item.active a {
+          .wrapper .navbar .nav nav .items .item.active a {
             font-weight: bold; }
-            .wrapper .navbar .nav .items .item.active a:before {
+            .wrapper .navbar .nav nav .items .item.active a:before {
               visibility: visible;
               -webkit-transform: scaleX(1);
               transform: scaleX(1); }
+      .wrapper .navbar .nav nav input {
+        display: none; }
+        @media only screen and (max-width: 900px) {
+          .wrapper .navbar .nav nav input {
+            position: absolute;
+            right: 16px;
+            top: 16px;
+            display: block;
+            width: 40px;
+            height: 32px;
+            cursor: pointer;
+            opacity: 0;
+            z-index: 40;
+            margin: 0;
+            -webkit-touch-callout: none; }
+            .wrapper .navbar .nav nav input:checked ~ .hamburg span {
+              opacity: 1;
+              transform: rotate(45deg) translate(-3px, -2px);
+              background: white; }
+              .wrapper .navbar .nav nav input:checked ~ .hamburg span:nth-last-child(2) {
+                opacity: 0;
+                transform: rotate(0deg) scale(0.2, 0.2); }
+              .wrapper .navbar .nav nav input:checked ~ .hamburg span:nth-last-child(1) {
+                transform: rotate(-45deg) translate(0, -1px); }
+            .wrapper .navbar .nav nav input:checked ~ .items {
+              transform: none; } }
+      .wrapper .navbar .nav nav .hamburg {
+        display: none; }
+        @media only screen and (max-width: 900px) {
+          .wrapper .navbar .nav nav .hamburg {
+            display: inherit;
+            width: 40px;
+            height: 32px;
+            position: absolute;
+            right: 16px;
+            top: 22px; }
+            .wrapper .navbar .nav nav .hamburg span {
+              display: block;
+              width: 33px;
+              height: 4px;
+              margin-bottom: 5px;
+              position: relative;
+              background: #393D51;
+              border-radius: 3px;
+              z-index: 30;
+              transform-origin: 4px 0px;
+              transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease; }
+              .wrapper .navbar .nav nav .hamburg span:first-child {
+                transform-origin: 0% 0%; }
+              .wrapper .navbar .nav nav .hamburg span:nth-last-child(1) {
+                transform-origin: 0% 100%; } }
     .wrapper .navbar.light .nav {
       border-bottom: 1px solid rgba(255, 255, 255, 0.2); }
       .wrapper .navbar.light .nav .logo-cont .logo .logo-text {
         fill: white; }
-      .wrapper .navbar.light .nav .items .item a {
+      .wrapper .navbar.light .nav nav .items .item a {
         color: white; }
-        .wrapper .navbar.light .nav .items .item a:before {
+        .wrapper .navbar.light .nav nav .items .item a:before {
           background: #fff; }
+      .wrapper .navbar.light .nav nav .hamburg span {
+        background: white; }
     .wrapper .navbar.sticky {
       background: #03ABFB; }
       .wrapper .navbar.sticky .nav {
         border-bottom: 1px solid rgba(255, 255, 255, 0); }
-        .wrapper .navbar.sticky .nav .items .item a {
+        .wrapper .navbar.sticky .nav nav .items .item a {
           color: white; }
-          .wrapper .navbar.sticky .nav .items .item a:before {
+          .wrapper .navbar.sticky .nav nav .items .item a:before {
             background: #fff; }
+        .wrapper .navbar.sticky .nav nav .hamburg span {
+          background: white; }
         .wrapper .navbar.sticky .nav .logo-cont {
           -webkit-clip-path: polygon(10% 0, 100% 0, 90% 100%, 0% 100%);
           clip-path: polygon(10% 0, 100% 0, 90% 100%, 0% 100%);
@@ -535,12 +615,20 @@ html {
             </svg>
           </a>
         </div>
-        <div class="items">
-          
-          
-          <div class="item active"><a href='/about'>About</a></div>
-          
-        </div>
+        <nav>
+          <input type="checkbox" />
+          <div class="hamburg">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <ul class="items">
+            
+            
+            <li class="item active"><a href='/about'>About</a></li>
+            
+          </ul>
+        </nav>
       </div>
     </div>
 

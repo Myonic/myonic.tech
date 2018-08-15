@@ -60,12 +60,20 @@
             </svg>
           </a>
         </div>
-        <div class="items">
-          {% for item in site.data.navigation.main %}
-          {% assign lc-title = item.title | downcase %}
-          <div class="item{% if page.nav == lc-title %} active{% endif %}"><a href='{{ item.url }}'>{{ item.title }}</a></div>
-          {% endfor %}
-        </div>
+        <nav>
+          <input type="checkbox" />
+          <div class="hamburg">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <ul class="items">
+            {% for item in site.data.navigation.main %}
+            {% assign lc-title = item.title | downcase %}
+            <li class="item{% if page.nav == lc-title %} active{% endif %}"><a href='{{ item.url }}'>{{ item.title }}</a></li>
+            {% endfor %}
+          </ul>
+        </nav>
       </div>
     </div>
 
