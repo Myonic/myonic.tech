@@ -1,0 +1,14 @@
+title: Myonic Technologies
+email: contact@myonic.tech
+description: >-
+  Creating enabling technology for users with paralysis. We give users back the
+  ability to control their own muscles with our wearable device.
+logo: '/img/icon.png' # Used for SEO
+cover: '/img/card.png'
+baseurl: ''
+url: 'https://myonic.tech'
+twitter_username: myonic
+github_username:  myonic
+markdown: kramdown
+plugins:
+  - jekyll-feed

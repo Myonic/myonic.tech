@@ -1,362 +1,49 @@
-<!DOCTYPE html>
-<html ⚡>
+---
+layout: default
+nospacer: true
+lightnav: true
+---
+<div class="feature" style="background-image: url('/img/hpimg1.jpg')">
+  <div class="content">
+    <h1>We are <span class="myonic">Myonic</span></h1>
+    <p>
+      Creating enabling technology for users with paralysis. <br /> We give users back the ability to control their own muscles with our wearable device.
+    </p>
+  </div>
+</div>
 
-<head>
-    <script async src="https://cdn.ampproject.org/v0.js"></script>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Myonic Technologies</title>
-    <meta name="description" content="Creating enabling technology for users with paralysis. We give users back the ability to control their own muscles with our wearable device." />
-    <meta name="HandheldFriendly" content="True" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="referrer" content="no-referrer-when-downgrade">
-    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
-    <meta http-equiv="Pragma" content="no-cache" />
-    <meta http-equiv="Expires" content="0" />
-
-    <meta property="og:site_name" content="Myonic Technologies" />
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="Myonic Technologies" />
-    <meta property="og:description" content="Creating enabling technology for users with paralysis. We give users back the ability to control their own muscles with our wearable device." />
-    <meta property="og:url" content="https://myonic.tech/" />
-    <meta property="og:image" content="https://myonic.tech/img/card.png">
-    <meta property="og:image:type" content="image/png">
-    <meta property="og:image:width" content="4096">
-    <meta property="og:image:height" content="2048">
-    <meta property="og:image:alt" content="Myonic Logo">
-
-    <meta name="twitter:card" content="summary" />
-    <meta name="twitter:site" content="@myonic" />
-    <meta name="twitter:title" content="Myonic Technologies" />
-    <meta name="twitter:description" content="Creating enabling technology for users with paralysis. We give users back the ability to control their own muscles with our wearable device." />
-    <meta name="twitter:url" content="https://myonic.tech/" />
-    <meta name="twitter:image" content="https://myonic.tech/img/card.png" />
-    <meta name="twitter:image:alt" content="Myonic Logo" />
-
-    <script type="application/ld+json">
-      {
-          "@context": "https://schema.org",
-          "@type": "Website",
-          "publisher": {
-              "@type": "Organization",
-              "name": "Myonic Technologies",
-              "logo": "https://myonic.tech/img/logo.png/"
-          },
-          "url": "https://myonic.tech/",
-          "mainEntityOfPage": {
-              "@type": "WebPage",
-              "@id": "https://myonic.tech/"
-          },
-          "description": "Creating enabling technology for users with paralysis. We give users back the ability to control their own muscles with our wearable device."
-      }
-    </script>
-
-    <link rel="canonical" href="https://myonic.tech/">
-
-    <link rel="shortcut icon" href="favicons/favicon.ico?v=1" type="image/x-icon">
-    <link rel="icon" href="favicons/favicon-32.png?v=1" sizes="32x32">
-    <link rel="icon" href="favicons/favicon-48.png?v=1" sizes="48x48">
-    <link rel="icon" href="favicons/favicon-96.png?v=1" sizes="96x96">
-    <link rel="icon" href="favicons/favicon-144.png?v=1" sizes="144x144">
-
-    <link rel="stylesheet" type="text/css" href="css/style.min.css" />
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-
-    <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
-
-    <script type="text/javascript" src="js/scrollreveal.min.js"></script>
-
-    <script type="text/javascript" src="js/scrollIt.js"></script>
-
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
-
-    <script type="text/javascript">
-        $(document).ready(function() {
-            resizeDiv();
-        });
-
-        window.onresize = function(event) {
-            resizeDiv();
-        }
-
-        function resizeDiv() {
-            vpw = $(window).width();
-            vph = $(window).height();
-            $('.tile').css({
-                'height': vph + 'px'
-            });
-        }
-    </script>
-
-    <script type="text/javascript">
-      $(document).ready(function() {
-        var top = $('.navbar').offset().top;
-        $(window).scroll(function(event) {
-          var y = $(this).scrollTop();
-          if (y >= top) {
-            $('.navbar').addClass('float');
-            $('.mobile-nav').addClass('float');
-          } else {
-            $('.navbar').removeClass('float');
-            $('.mobile-nav').removeClass('float');
-          }
-        });
-      });
-    </script>
-    <script type="text/javascript">
-        $(function() {
-            $.scrollIt({
-                upKey: 38,
-                downKey: 40,
-                easing: 'easeOutCubic',
-                scrollTime: 800,
-                activeClass: 'active',
-                topOffset: -45
-            });
-        });
-    </script>
-</head>
-
-<body class="home-template">
-    <div class="tile" id="tile1" data-scroll-index="0">
-        <div class="cont-1">
-            <div class="logo"><img src="img/logo.png" /></div>
-            <hr>
-            <div class="mobile-nav">
-              <a class="n-logo-c" href="" data-scroll-nav="0"><img class="n-logo" src="img/logo-s.png"></a>
-              <a href="" data-scroll-nav="0" class="material-icons">menu</a>
-            </div>
-            <ul class="navbar">
-                <a href="" data-scroll-nav="0"><img class="n-logo" src="img/logo-s.png"></a>
-                <li><a href="" data-scroll-nav="1">About</a></li>
-                <li><a href="" data-scroll-nav="2">Tech</a></li>
-                <li><a href="" data-scroll-nav="3">Team</a></li>
-            </ul>
-        </div>
+<div class="homepage">
+  <div class="row">
+    <div class="column">
+      <h1>Think</h1>
+      <p>
+        Using an <a href="https://www.emotiv.com/epoc/">Emotiv Epoc+</a> brain control interface (BCI), our device is able to grant muscle contractions with minimal use of physical motion or assistance. Emotiv's EEG technology is non-invasive and safe to use for extended periods of time. The device can be controlled with nothing more then the user’s thoughts and simple head motions.
+      </p>
     </div>
-
-    <div id="tile2" data-scroll-index="1">
-        <div class="cont-2">
-            <h1>We are Myonic.</h1>
-            <h2 class="sub" style="font-weight:normal">Creating enabling technology for users with paralysis.<br>We give users back the ability to control their own muscles with our wearable device.</h2>
-        </div>
+    <div class="column">
+      <img src="/img/move-headset.png" />
     </div>
-
-    <div id='tile22' data-scroll-index="2">
-      <div class="cont-22">
-        <div class="item item1">
-          <div class="column">
-            <img class="tech techimg" src="img/move-headset.png" />
-          </div>
-          <div class="column">
-            <h1>Think</h1>
-            <p class="tech">
-              Using an <a href=https://www.emotiv.com/epoc/>Emotiv Epoc+</a> brain control interface (BCI), our device is able to grant muscle contractions with minimal use of physical motion or assistance. Emotiv's EEG technology is non-invasive and safe to use for extended periods of time. The device can be controlled with nothing more then the user’s thoughts and simple head motions.
-            </p>
-          </div>
-        </div>
-        <div class="item item2">
-          <div class="column">
-            <img class="tech techimg" src="img/move-sketch.png" />
-          </div>
-          <div class="column">
-            <h1>Interpret</h1>
-            <p class="tech">
-              A user can train our device to read their thoughts with the BCI in under 15 minutes. The device will provide clear setup instructions through a built-in screen. Once done, our device handles the interpretation of the user’s thoughts and transfers that into physical motion, assisted by sensor feedback from our sleeve for increased accuracy. The device outputs a safe electrical impulse to contract muscles which is based off of already widely used and tested <a href="https://en.wikipedia.org/wiki/Transcutaneous_electrical_nerve_stimulation">TENS</a> technology.
-            </p>
-          </div>
-        </div>
-        <div class="item item3">
-          <div class="column">
-            <img class="tech techimg" src="img/move-sleeve.png" />
-          </div>
-          <div class="column">
-            <h1>Control</h1>
-            <p class="tech">
-              Our device attaches to a elastic sleeve which contains embedded electrodes and sensors. This configuration of our sleeve allows movement of the thumb, four fingers, and elbow to assist in performing basic everyday tasks. The elastic sleeve is made to be comfortable to wear for extended periods of time and the device can be disconnected from the sleeve for training and charging.
-            </p>
-          </div>
-        </div>
-      </div>
+  </div>
+  <div class="row reverse">
+    <div class="column">
+      <h1>Interpret</h1>
+      <p>
+        A user can train our device to read their thoughts with the BCI in under 15 minutes. The device will provide clear setup instructions through a built-in screen. Once done, our device handles the interpretation of the user’s thoughts and transfers that into physical motion, assisted by sensor feedback from our sleeve for increased accuracy. The device outputs a safe electrical impulse to contract muscles which is based off of already widely used and tested <a href="https://en.wikipedia.org/wiki/Transcutaneous_electrical_nerve_stimulation">TENS</a> technology.
+      </p>
     </div>
-
-    <div id='tile3' data-scroll-index="3">
-        <div class="cont-3">
-            <img class="person" src="img/nick.jpg">
-            <div>
-                <h2 class="name">Nick Titus</h2>
-                <p class="desc"><b>Chief Executive Officer</b>
-                    <br /> As CEO, Nick Titus ensures that the short term and long term objectives of Myonic fit the company vision. In addition, Nick leads the team in product development and handles business affairs.
-                    <br /> <a href="mailto:nick@myonic.tech" style="font-size: 14px;">nick@myonic.tech</a>
-                  </p>
-            </div>
-        </div>
-        <div class="cont-3">
-            <img class="person" src="img/sam.jpg">
-            <div>
-                <h2 class="name">Sam Everett</h2>
-                <p class="desc"><b>Chief Financial Officer</b>
-                    <br /> As CFO, Sam Everett manages all financial tasks of Myonic. In addition to the numbers, Sam is also in charge of Myonic's marketing efforts, as well as product design.
-                    <br /> <a href="mailto:sam@myonic.tech" style="font-size: 14px;">sam@myonic.tech</a>
-                  </p>
-            </div>
-        </div>
-        <div class="cont-3">
-            <img class="person" src="img/nate.jpg">
-            <div>
-                <h2 class="name">Nate Petersen</h2>
-                <p class="desc"><b>Chief Technical Officer</b>
-                    <br /> As CTO, Nate Petersen develops the software and hardware components at Myonic. Nate has many years of experience in IT and computer science and plays a key role in creating a functional and safe product.
-                    <br /> <a href="mailto:nate@myonic.tech" style="font-size: 14px;">nate@myonic.tech</a>
-                  </p>
-            </div>
-        </div>
-        <div class="cont-3">
-            <img class="person" src="img/ben.jpg">
-            <div>
-                <h2 class="name">Ben Saltz</h2>
-                <p class="desc"><b>Chief Design Officer</b>
-                    <br /> Ben is the lead designer at Myonic. Along with the look and feel of the company, he is key in the design and manufacturing of the product. Above all, he makes sure the product is intuitive to set up and use.
-                    <br /> <a href="mailto:ben@myonic.tech" style="font-size: 14px;">ben@myonic.tech</a>
-                  </p>
-            </div>
-        </div>
+    <div class="column">
+      <img src="/img/move-sketch.png" />
     </div>
-
-    <div id="tile4">
-        <div>
-            <center>
-                <h2 class="contactt">Contact Us</h2>
-                <a href="mailto:contact@myonic.tech" class="contactt">contact@myonic.tech</a>
-                <br>
-                <br>
-                <i class="contactt">(720) 837-8077</i>
-                <br>
-                <br>
-                <div>
-                    <a href="https://twitter.com/myonic"><img class="social-icon" width="50px" src="img/social/twitter.png"></a>
-                    <a href="https://facebook.com/myonic"><img class="social-icon" width="50px" src="img/social/facebook.png"></a>
-                    <a href="https://plus.google.com/u/1/b/107100038544431376490/107100038544431376490"><img class="social-icon" width="50px" src="img/social/google.png"></a>
-                    <a href="https://www.youtube.com/channel/UC8zHL1zFANrUnoW829BW6cQ"><img class="social-icon" width="50px" src="img/social/youtube.png"></a>
-                </div>
-                <hr />
-                <h2 class="contactt">Signup for our Newsletter</h3>
-                <!-- Begin MailChimp Signup Form -->
-                <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
-                <style type="text/css">
-                  #mce-BETASTAT {
-                    color:#555;
-                  }
-                  #mc-embedded-subscribe {
-                    background-color: #F47171 !important;
-                    margin-top:-15px !important;
-                  }
-                  #mc-embedded-subscribe:hover {
-                    background-color: #f14141 !important;
-                  }
-                </style>
-                <div id="mc_embed_signup">
-                <form action="//tech.us16.list-manage.com/subscribe/post?u=b67919c3a04552b74040833f3&amp;id=2a3ee58143" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-                    <div id="mc_embed_signup_scroll">
-
-                <div class="mc-field-group">
-                  <input type="email" value="" name="EMAIL" class="required email contactt" id="mce-EMAIL" placeholder="Email Address">
-                </div>
-                <div class="mc-field-group">
-                  <select name="BETASTAT" class="required contactt" id="mce-BETASTAT">
-                  <option value="">I am NOT interested in participating in the beta</option>
-                  <option value="I am interested in participating in the beta">I am interested in participating in the beta</option>
-
-                  </select>
-                </div>
-                  <div id="mce-responses" class="clear">
-                    <div class="response" id="mce-error-response" style="display:none"></div>
-                    <div class="response" id="mce-success-response" style="display:none"></div>
-                  </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-                    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_b67919c3a04552b74040833f3_2a3ee58143" tabindex="-1" value=""></div>
-                    <center>
-                      <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button contactt"></div>
-                    </center>
-                    </div>
-                </form>
-                </div>
-
-                <!--End mc_embed_signup-->
-            </center>
-        </div>
-        <!-- <a href="" data-scroll-nav="4">Blog</a> -->
+  </div>
+  <div class="row">
+    <div class="column">
+      <h1>Control</h1>
+      <p>
+         Our device attaches to a elastic sleeve which contains embedded electrodes and sensors. This configuration of our sleeve allows movement of the thumb, four fingers, and elbow to assist in performing basic everyday tasks. The elastic sleeve is made to be comfortable to wear for extended periods of time and the device can be disconnected from the sleeve for training and charging.
+      </p>
     </div>
-
-    <script type="text/javascript">
-        window.sr = ScrollReveal();
-        sr.reveal('.logo', {
-            origin: "top",
-            distance: "24px",
-            duration: 1500,
-            scale: 1.2,
-            easing: 'cubic-bezier(0, 0.5, 0.5, 1)'
-        });
-        sr.reveal('hr', {
-            delay: 200,
-            duration: 800,
-            easing: 'cubic-bezier(0, 0.5, 0.5, 1)'
-        });
-        sr.reveal('.navbar', {
-            delay: 400,
-            duration: 800,
-            easing: 'cubic-bezier(0, 0.5, 0.5, 1)'
-        });
-        sr.reveal('h1', {
-            duration: 1500,
-            distance: '100px',
-            easing: 'cubic-bezier(0, 0.5, 0.5, 1)'
-        });
-        sr.reveal('.sub', {
-            duration: 1500,
-            delay: 600,
-            distance: '100px',
-            easing: 'cubic-bezier(0, 0.5, 0.5, 1)'
-        });
-        sr.reveal('.name', {
-          duration: 800,
-          delay: 200,
-          distance: '20px',
-          viewFactor: 1,
-          easing: 'cubic-bezier(0, 0.5, 0.5, 1)',
-          distance: "100px",
-        })
-        sr.reveal('.person', {
-          duration: 800,
-          delay: 200,
-          distance: '20px',
-          viewFactor: 0.8,
-          easing: 'cubic-bezier(0, 0.5, 0.5, 1)',
-          distance: "100px",
-        })
-        sr.reveal('.tech', {
-          duration: 1500,
-          delay: 200,
-          distance: '100px',
-          easing: 'cubic-bezier(0, 0.5, 0.5, 1)',
-          distance: "100px",
-        })
-        sr.reveal('.desc', {
-          duration: 800,
-          delay: 200,
-          distance: '20px',
-          viewFactor: 1,
-          easing: 'cubic-bezier(0, 0.5, 0.5, 1)',
-          distance: "100px",
-        })
-        sr.reveal('.contactt', {
-            delay: 200
-        }, 120)
-        sr.reveal('.social-icon', {
-            delay: 200
-        }, 15)
-    </script>
-
-    <div class="copyright">&copy; 2018 <a href="https://myonic.tech/">Myonic Technologies Inc.</a> All Rights Reserved.</div>
-</body>
+    <div class="column">
+      <img src="/img/move-sleeve.png" />
+    </div>
+  </div>
+</div>
