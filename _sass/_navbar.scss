@@ -93,6 +93,9 @@
             text-decoration: none;
             transition: opacity 0.5s, color 0.5s;
             color: #393D51;
+            @media only screen and (max-width: 900px) {
+              color: white;
+            }
 
             &:hover {
               opacity: 0.8;

@@ -6,3 +6,4 @@
 - Add forestry functionality (https://forestry.io/)
 - Add RSS feed link to footer
 - Myonic Move about page
+- Fix mobile navbar logo coloring and background
