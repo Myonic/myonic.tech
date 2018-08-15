@@ -1,0 +1,102 @@
+footer {
+  position: absolute;
+  bottom: 0;
+  height: 420px;
+  width: 100%;
+  padding: 0;
+  background: #393D51;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  color: white;
+  padding: 116px 0 16px;
+  -webkit-clip-path: polygon(0 100px, 100% 0, 100% 100%, 0% 100%);
+  clip-path: polygon(0 100px, 100% 0, 100% 100%, 0% 100%);
+
+  .row {
+    width: 60%;
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    margin-bottom: 48px;
+
+    &.border {
+      border-bottom: solid rgba(255,255,255,0.8) 1px;
+      padding-bottom: 32px;
+    }
+
+    .column {
+      .logo {
+        width: 100px;
+
+        .logo-text {
+          fill: white;
+        }
+      }
+
+      .icon {
+        fill:white;
+        width:32px;
+        padding: 0 4px;
+      }
+
+      .newsletter {
+        margin-top: -16px;
+        input[type='email'] {
+          border: solid 0 white;
+          background: white;
+          padding: 4px;
+          border-radius: 2px;
+          box-shadow: 0 0 0 0 #03ABFB;
+          transition: box-shadow 0.2s, color 0.2s;
+        }
+        input[type='email']:focus {
+          box-shadow: 0 0 5px 0 #03ABFB;
+          color:#03ABFB;
+        }
+        input[type='submit'] {
+          border: solid 0 white;
+          background: #03ABFB;
+          color: white;
+          font-weight: bold;
+          padding: 4px;
+          border-radius: 2px;
+          transition: box-shadow 0.2s, color 0.2s, background 0.2s;
+        }
+        input[type='submit']:focus, input[type='submit']:active {
+          box-shadow: 0 0 5px 0 #03ABFB;
+          background: white;
+          color:black;
+        }
+      }
+    }
+  }
+
+  h1 {
+    font-size: 0.8em;
+    font-weight: normal;
+  }
+
+  ul {
+    padding: 0;
+    font-size: 0.8em;
+
+    li {
+      list-style: none;
+
+      a {
+        color: white;
+        opacity: 0.8;
+
+        &:hover {
+          opacity: 0.5;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,11 @@
+<div class="team">
+  {% for item in site.data.team %}
+    <div class="member">
+      <div class="image" style="background-image: url('{{ item.image }}')"></div>
+      <p class="name">{{ item.name }}</p>
+      <p class="title">{{ item.title }}</p>
+      <p class="description">{{ item.description }}</p>
+      <p class="email"><a href="mailto:{{ item.email }}">{{ item.email }}</a></p>
+    </div>
+  {% endfor %}
+</div>

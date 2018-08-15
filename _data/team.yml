@@ -1,0 +1,35 @@
+- name: Nick Titus
+  title: Co-founder and Visionary
+  email: nick@myonic.tech
+  description: >-
+    Nick Titus ensures that the short term and long term objectives of Myonic
+    fit the company vision. In addition, Nick leads the team in product
+    development and handles business affairs.
+  image: /img/nick.jpg
+
+- name: Sam Everett
+  title: Co-founder and Finance Expert
+  email: sam@myonic.tech
+  description: >-
+    Sam Everett manages all financial tasks of Myonic. In addition to the
+    numbers, Sam is also in charge of Myonic's marketing efforts, as well as
+    product design.
+  image: /img/sam.jpg
+
+- name: Nate Petersen
+  title: Co-founder and Technical Guru
+  email: nate@myonic.tech
+  description: >-
+    Nate Petersen develops the software and hardware components at
+    Myonic. Nate has many years of experience in IT and computer science and
+    plays a key role in creating a functional and safe product.
+  image: /img/nate.jpg
+
+- name: Ben Saltz
+  title: Co-founder and Designer
+  email: ben@myonic.tech
+  description: >-
+    Ben is the lead designer at Myonic. Along with the look and feel of the
+    company, he is key in the design and manufacturing of the product. Above
+    all, he makes sure the product is intuitive to set up and use.
+  image: /img/ben.jpg
