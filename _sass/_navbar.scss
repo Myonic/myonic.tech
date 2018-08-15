@@ -13,6 +13,9 @@
     transition: height 1s;
     border-bottom: 1px solid rgba(0, 0, 0, 0.2);
     transition: border-bottom 1s;
+    @media only screen and (max-width: 900px) {
+      height: 64px;
+    }
 
     .logo-cont {
       position: absolute;
@@ -22,12 +25,16 @@
       transition: background 1s, clip-path 1s, -webkit-clip-path 1s, width 1s;
       display: inline-block;
       width: 320px;
+      @media only screen and (max-width: 900px) {
+        width: 168px;
+      }
 
       .logo {
         margin-top: 16px;
         height: 64px;
         transition: margin-left 1s;
         @media only screen and (max-width: 900px) {
+          height: 32px;
           margin-left: 8px;
         }
 
@@ -50,6 +57,9 @@
         font-weight: 300;
         line-height: 96px;
         display: inline-block;
+        @media only screen and (max-width: 900px) {
+          line-height: 64px;
+        }
 
         a {
           text-decoration: none;
@@ -84,7 +94,7 @@
         &.active {
           a {
             font-weight: bold;
-            
+
             &:before {
               visibility: visible;
               -webkit-transform: scaleX(1);
@@ -148,13 +158,11 @@
         @media only screen and (max-width: 900px) {
           -webkit-clip-path: polygon(0 0, 100% 0, 90% 100%, 0% 100%);
           clip-path: polygon(0 0, 100% 0, 90% 100%, 0% 100%);
+          width: 192px;
         }
 
         .logo {
           margin-left: -8px;
-          @media only screen and (max-width: 900px) {
-            margin-left: -16px;
-          }
 
           .logo-text {
             fill: #393D51;
@@ -165,6 +173,9 @@
       .items {
         .item {
           font-size: 1.2em;
+          @media only screen and (max-width: 900px) {
+            font-size: inherit;
+          }
         }
       }
     }

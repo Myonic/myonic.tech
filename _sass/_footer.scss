@@ -1,7 +1,7 @@
 footer {
   position: absolute;
   bottom: 0;
-  height: 420px;
+  height: 450px;
   width: 100%;
   padding: 0;
   background: #393D51;
@@ -16,6 +16,11 @@ footer {
   padding: 116px 0 16px;
   -webkit-clip-path: polygon(0 100px, 100% 0, 100% 100%, 0% 100%);
   clip-path: polygon(0 100px, 100% 0, 100% 100%, 0% 100%);
+  @media only screen and (max-width: 900px) {
+    height: 575px;
+    -webkit-clip-path: polygon(0 20px, 100% 0, 100% 100%, 0% 100%);
+    clip-path: polygon(0 20px, 100% 0, 100% 100%, 0% 100%);
+  }
 
   .row {
     width: 60%;
@@ -24,6 +29,10 @@ footer {
     flex-wrap: wrap;
     align-content: flex-start;
     margin-bottom: 48px;
+    @media only screen and (max-width: 900px) {
+      width: 80%;
+      margin-bottom: 32px;
+    }
 
     &.border {
       border-bottom: solid rgba(255,255,255,0.8) 1px;
@@ -31,11 +40,15 @@ footer {
     }
 
     .column {
-      .logo {
-        width: 100px;
+      @media only screen and (max-width: 900px) {
+        width: 45%;
+        text-align: center;
+      }
 
-        .logo-text {
-          fill: white;
+      &.full{
+        @media only screen and (max-width: 900px) {
+          width: 100%;
+          height: 64px;
         }
       }
 
@@ -43,6 +56,9 @@ footer {
         fill:white;
         width:32px;
         padding: 0 4px;
+        @media only screen and (max-width: 900px) {
+          width: 24px;
+        }
       }
 
       .newsletter {
@@ -52,6 +68,7 @@ footer {
           background: white;
           padding: 4px;
           border-radius: 2px;
+          width: 130px;
           box-shadow: 0 0 0 0 #03ABFB;
           transition: box-shadow 0.2s, color 0.2s;
         }

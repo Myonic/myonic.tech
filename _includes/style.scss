@@ -4,7 +4,10 @@
 .wrapper {
   min-height: 100%;
   position: relative;
-  padding-bottom: 436px;
+  padding-bottom: 466px;
+  @media only screen and (max-width: 900px) {
+    padding-bottom: 591px;
+  }
 
   @import 'navbar';
   @import 'footer';

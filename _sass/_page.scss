@@ -4,8 +4,17 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  box-sizing: border-box;
+  @media only screen and (max-width: 900px) {
+    display: block;
+  }
 
   .content {
     width: 900px;
+    box-sizing: border-box;
+    @media only screen and (max-width: 900px) {
+      width: 100%;
+      padding: 0 8px;
+    }
   }
 }
