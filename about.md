@@ -1,5 +1,7 @@
 ---
 layout: page
+permalink: "/about/"
+title: About Myonic Technologies
 nav: about
 ---
 
