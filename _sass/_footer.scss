@@ -84,9 +84,14 @@ footer {
           padding: 4px;
           border-radius: 2px;
           transition: box-shadow 0.2s, color 0.2s, background 0.2s;
+          cursor: pointer;
         }
         input[type='submit']:focus, input[type='submit']:active {
           box-shadow: 0 0 5px 0 #03ABFB;
+          background: white;
+          color:black;
+        }
+        input[type='submit']:hover {
           background: white;
           color:black;
         }
